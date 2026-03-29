@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biografi Guru Bahasa Inggris</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&amp;family=Source+Sans+3:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+    html, body { height: 100%; margin: 0; }
+    * { box-sizing: border-box; }
+    .font-heading { font-family: 'Playfair Display', Georgia, serif; }
+    .font-body { font-family: 'Source Sans 3', sans-serif; }
+
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes scaleIn { from{opacity:0;transform:scale(0.8)} to{opacity:1;transform:scale(1)} }
+    @keyframes slideLeft { from{opacity:0;transform:translateX(-40px)} to{opacity:1;transform:translateX(0)} }
+    @keyframes slideRight { from{opacity:0;transform:translateX(40px)} to{opacity:1;transform:translateX(0)} }
+    @keyframes buttonPulse { 0%{transform:scale(1)} 50%{transform:scale(1.05)} 100%{transform:scale(1)} }
+    @keyframes buttonGlow { 0%{box-shadow:0 0 0 0 rgba(37,99,235,0.7)} 100%{box-shadow:0 0 0 12px rgba(37,99,235,0)} }
+    @keyframes iconBounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
+
+    .anim-float { animation: float 4s ease-in-out infinite; }
+    .anim-fade-up { animation: fadeUp 0.8s ease-out forwards; opacity: 0; }
+    .anim-scale { animation: scaleIn 0.6s ease-out forwards; opacity: 0; }
+    .anim-slide-l { animation: slideLeft 0.7s ease-out forwards; opacity: 0; }
+    .anim-slide-r { animation: slideRight 0.7s ease-out forwards; opacity: 0; }
+    .anim-pulse { animation: buttonPulse 0.6s ease-in-out; }
+    .anim-glow { animation: buttonGlow 1.5s ease-out; }
+    .anim-bounce { animation: iconBounce 0.6s ease-in-out; }
+    .delay-1 { animation-delay: 0.15s; }
+    .delay-2 { animation-delay: 0.3s; }
+    .delay-3 { animation-delay: 0.45s; }
+    .delay-4 { animation-delay: 0.6s; }
+    .delay-5 { animation-delay: 0.75s; }
+    .delay-6 { animation-delay: 0.9s; }
+
+    .nav-link { position: relative; transition: all 0.3s ease; }
+    .nav-link::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:2px; background:#2563eb; transition: width 0.4s ease; }
+    .nav-link:hover { color:#60a5fa; transform: translateY(-2px); }
+    .nav-link:hover::after { width:100%; }
+
+    .card-hover { transition: transform 0.3s, box-shadow 0.3s; }
+    .card-hover:hover { transform: translateY(-6px); }
+
+    section { scroll-margin-top: 80px; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-body">
+  <div id="app" class="w-full h-full overflow-auto" style="background:#0a1628;">
+   <!-- Floating Particles -->
+   <div class="fixed inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
+    <div class="absolute w-64 h-64 rounded-full blur-3xl opacity-10 anim-float" style="background:#3b82f6; top:10%; left:5%;"></div>
+    <div class="absolute w-48 h-48 rounded-full blur-3xl opacity-8 anim-float delay-2" style="background:#60a5fa; top:50%; right:10%;"></div>
+    <div class="absolute w-56 h-56 rounded-full blur-3xl opacity-10 anim-float delay-4" style="background:#1d4ed8; bottom:10%; left:40%;"></div>
+   </div><!-- Navigation -->
+   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background:rgba(10,22,40,0.85); backdrop-filter:blur(12px); border-bottom:1px solid rgba(96,165,250,0.1);">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+     <div class="flex items-center gap-2"><button onclick="smoothScroll(event,'hero')" class="text-2xl md:text-4xl font-bold cursor-pointer transition-all hover:opacity-80" style="color:#e0edff; background:none; border:none; padding:0;">✎𓂃𝐵𝒾𝑜𝑔𝓇𝒶𝒻𝒾</button>
+     </div>
+     <div class="hidden md:flex items-center gap-8">
+      <a href="#hero" class="nav-link text-sm font-medium" style="color:#93bbfc;" onclick="smoothScroll(event,'hero')">Beranda</a> <a href="#about" class="nav-link text-sm font-medium" style="color:#93bbfc;" onclick="smoothScroll(event,'about')">Tentang</a> <a href="#qa" class="nav-link text-sm font-medium" style="color:#93bbfc;" onclick="smoothScroll(event,'qa')">Q&amp;A</a> <a href="#team" class="nav-link text-sm font-medium" style="color:#93bbfc;" onclick="smoothScroll(event,'team')">Tim Kami</a>
+     </div><button id="mobileToggle" class="md:hidden" style="color:#93bbfc;" aria-label="Menu"><i data-lucide="menu" style="width:24px;height:24px;"></i></button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-3">
+     <a href="#hero" class="text-sm py-2" style="color:#93bbfc;" onclick="smoothScroll(event,'hero')">Beranda</a> <a href="#about" class="text-sm py-2" style="color:#93bbfc;" onclick="smoothScroll(event,'about')">Tentang</a> <a href="#qa" class="text-sm py-2" style="color:#93bbfc;" onclick="smoothScroll(event,'qa')">Q&amp;A</a> <a href="#team" class="text-sm py-2" style="color:#93bbfc;" onclick="smoothScroll(event,'team')">Tim Kami</a>
+    </div>
+   </nav><!-- Hero Section -->
+   <section id="hero" class="relative min-h-full flex items-center justify-center px-6 pt-24 pb-16">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 w-full">
+     <div class="flex-1 text-center md:text-left">
+      <p class="text-sm font-medium tracking-widest uppercase mb-4 anim-fade-up" style="color:#60a5fa;">Pendidik Bahasa Inggris</p>
+      <h1 id="heroName" class="font-heading font-800 text-5xl md:text-7xl leading-tight mb-4 anim-fade-up delay-1" style="color:#e0edff;">Ni Ketut<br>
+        Supartini</h1>
+      <p id="heroTitle" class="text-lg md:text-xl font-light mb-8 anim-fade-up delay-2" style="color:#93bbfc;">Spread Love Everywhere Through English</p>
+      <div class="flex flex-wrap gap-4 justify-center md:justify-start anim-fade-up delay-3">
+       <a href="#about" onclick="smoothScroll(event,'about')" class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm transition-all hover:scale-105 button-animate" style="background:#2563eb; color:#e0edff;">📚 Pelajari Lebih Lanjut</a> <a href="#team" onclick="smoothScroll(event,'team')" class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm border transition-all hover:scale-105 button-animate" style="border-color:#2563eb; color:#60a5fa;">👥 Tim Kami</a>
+      </div>
+     </div>
+     <div class="relative anim-scale delay-2">
+      <img id="teacherPhoto" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgE-5iCxlnNeR_-dv7mPe85sflKu3LDIYho9EDJ7g3UhSffnY32UUI1q8K_sbycpyrp9vcY_KluLNTYSY-NbcygJjc_4AlIq-7tDTJb3OB9RnVCtRw2_XsNUVajROHXxbWR6HwJcfIuBSXnJbMdmur9Qr3CVyTsSKPy7L3YtCa-ZOpMKmwEFNdl0K-fgVRp/w662-h660/WhatsApp%20Image%202026-03-24%20at%2020.30.52%20(2).jpeg" alt="Ni Ketut Supartini" loading="lazy" class="w-64 h-64 md:w-80 md:h-80 rounded-3xl object-cover shadow-2xl" onerror="this.style.background='#1e3a5f'; this.alt='Photo unavailable';">
+      <div class="absolute -top-3 -right-3 w-16 h-16 rounded-2xl flex items-center justify-center anim-float" style="background:#1e3a5f;"><span class="text-2xl anim-bounce">📚</span>
+      </div>
+      <div class="absolute -bottom-3 -left-3 w-14 h-14 rounded-2xl flex items-center justify-center anim-float delay-3" style="background:#1e3a5f;"><span class="text-2xl anim-bounce delay-2">✍️</span>
+      </div>
+     </div>
+    </div>
+   </section><!-- Stats -->
+   <div class="relative z-10 max-w-5xl mx-auto px-6 -mt-4 mb-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+     <div class="text-center p-5 rounded-2xl card-hover anim-fade-up" style="background:rgba(30,58,95,0.6); border:1px solid rgba(96,165,250,0.15);">
+      <div class="text-3xl font-heading font-bold mb-1" style="color:#60a5fa;">
+       29
+      </div>
+      <div class="text-xs" style="color:#93bbfc;">
+       Tahun Mengajar
+      </div>
+     </div>
+     <div class="text-center p-5 rounded-2xl card-hover anim-fade-up delay-1" style="background:rgba(30,58,95,0.6); border:1px solid rgba(96,165,250,0.15);">
+      <div class="text-3xl font-heading font-bold mb-1" style="color:#60a5fa;">
+       6+
+      </div>
+      <div class="text-xs" style="color:#93bbfc;">
+       Institusi
+      </div>
+     </div>
+     <div class="text-center p-5 rounded-2xl card-hover anim-fade-up delay-2" style="background:rgba(30,58,95,0.6); border:1px solid rgba(96,165,250,0.15);">
+      <div class="text-3xl font-heading font-bold mb-1" style="color:#60a5fa;">
+       1995
+      </div>
+      <div class="text-xs" style="color:#93bbfc;">
+       Mulai Mengajar
+      </div>
+     </div>
+     <div class="text-center p-5 rounded-2xl card-hover anim-fade-up delay-3" style="background:rgba(30,58,95,0.6); border:1px solid rgba(96,165,250,0.15);">
+      <div class="text-3xl font-heading font-bold mb-1" style="color:#60a5fa;">
+       S. Sastra
+      </div>
+      <div class="text-xs" style="color:#93bbfc;">
+       Pendidikan
+      </div>
+     </div>
+    </div>
+   </div><!-- About Section -->
+   <section id="about" class="relative px-6 py-20">
+    <div class="max-w-5xl mx-auto">
+     <div class="text-center mb-14">
+      <p class="text-xs tracking-widest uppercase mb-2" style="color:#60a5fa;">Kenali</p>
+      <h2 id="aboutTitle" class="font-heading font-bold text-3xl md:text-4xl" style="color:#e0edff;">Tentang Ms.Tini</h2>
+      <div class="w-16 h-1 mx-auto mt-4 rounded-full" style="background:#2563eb;"></div>
+     </div>
+     <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="anim-slide-l">
+       <div class="rounded-3xl p-8 relative overflow-hidden" style="background: linear-gradient(145deg, rgba(30,58,95,0.7), rgba(15,35,60,0.9)); border:1px solid rgba(96,165,250,0.12);">
+        <div class="absolute top-0 right-0 w-32 h-32 rounded-full blur-2xl opacity-20" style="background:#3b82f6;"></div>
+        <div class="flex items-center gap-3 mb-6">
+         <div class="w-12 h-12 rounded-xl flex items-center justify-center text-2xl" style="background:rgba(37,99,235,0.2);">
+          👩‍🏫
+         </div>
+         <div>
+          <p class="font-heading font-semibold" style="color:#e0edff;">Filosofi Mengajar</p>
+          <p class="text-xs" style="color:#7baaf7;">Sebarkan cinta di mana-mana</p>
+         </div>
+        </div>
+        <blockquote id="philosophyQuote" class="italic text-base leading-relaxed" style="color:#93bbfc;">
+         "Praktikkan bahasa Inggris dalam kehidupan sehari-hari. Ciptakan sendiri lingkungan berbahasa Inggris, bahkan dalam imajinasi Anda dengan menerjemahkan kalimat yang Anda dengar dan ingin ucapkan di pikiran Anda."
+        </blockquote>
+       </div>
+      </div>
+      <div class="anim-slide-r space-y-5">
+       <p id="bioText" class="leading-relaxed" style="color:#b0c7e8;">Ni Ketut Supartini, lahir di Karangasem pada 24 Maret 1973, telah mengabdikan 29 tahun hidupnya sebagai pendidik bahasa Inggris. Lulusan Fakultas Sastra dari Universitas Warmadewa dan Mahasaraswati, beliau mengajar di berbagai institusi termasuk sekolah, kampus, Bea Cukai, Polda Bali, Poltabes Denpasar, dan lembaga bahasa. Passion beliau dalam mendidik tercermin dari dedikasi untuk menciptakan lingkungan belajar yang positif dan inovatif bagi semua murid.</p>
+       <div class="grid grid-cols-2 gap-4">
+        <div class="p-4 rounded-xl" style="background:rgba(30,58,95,0.5); border:1px solid rgba(96,165,250,0.1);">
+         <i data-lucide="graduation-cap" style="width:20px;height:20px;color:#60a5fa;" class="mb-2"></i>
+         <p class="text-xs font-medium" style="color:#e0edff;">S. Sastra</p>
+         <p class="text-xs" style="color:#7baaf7;">Sastra Inggris</p>
+        </div>
+        <div class="p-4 rounded-xl" style="background:rgba(30,58,95,0.5); border:1px solid rgba(96,165,250,0.1);">
+         <i data-lucide="award" style="width:20px;height:20px;color:#60a5fa;" class="mb-2"></i>
+         <p class="text-xs font-medium" style="color:#e0edff;">Guru Berdedikasi</p>
+         <p class="text-xs" style="color:#7baaf7;">Sejak 1995</p>
+        </div>
+        <div class="p-4 rounded-xl" style="background:rgba(30,58,95,0.5); border:1px solid rgba(96,165,250,0.1);">
+         <i data-lucide="globe" style="width:20px;height:20px;color:#60a5fa;" class="mb-2"></i>
+         <p class="text-xs font-medium" style="color:#e0edff;">Multi-Institusi</p>
+         <p class="text-xs" style="color:#7baaf7;">6+ Tempat Mengajar</p>
+        </div>
+        <div class="p-4 rounded-xl" style="background:rgba(30,58,95,0.5); border:1px solid rgba(96,165,250,0.1);">
+         <i data-lucide="heart" style="width:20px;height:20px;color:#60a5fa;" class="mb-2"></i>
+         <p class="text-xs font-medium" style="color:#e0edff;">Bersemangat</p>
+         <p class="text-xs" style="color:#7baaf7;">Mengajar Inovatif</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Team Section -->
+   <section id="team" class="relative px-6 py-20">
+    <div class="max-w-5xl mx-auto">
+     <div class="text-center mb-14">
+      <p class="text-xs tracking-widest uppercase mb-2" style="color:#60a5fa;">Kami</p>
+      <h2 class="font-heading font-bold text-3xl md:text-4xl" style="color:#e0edff;">Tim Kami</h2>
+      <div class="w-16 h-1 mx-auto mt-4 rounded-full" style="background:#2563eb;"></div>
+     </div>
+     <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center anim-fade-up">
+       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKz0GHMtibYbkuI54vYYY_lc3TyzyIg31TAaBkXslZTFRvIFVfiohuVaXg3jFUzR470lcdHJetxYHSDIS4gx0zEUw3m3jmc0Q0vNAYRVUP4dt3Nb-NHyEy68eEMJC1s0-fTFD1h3V1A1ijgotR9ovAt7d0uLeWCr8TphI_q5LF43T1PMq7AtbshwmksG5O/s1600/WhatsApp%20Image%202026-03-28%20at%2015.19.01.jpeg" alt="Ferdy" loading="lazy" class="w-40 h-40 mx-auto mb-5 rounded-2xl object-cover" onerror="this.style.background='#1e3a5f'; this.alt='Photo unavailable';">
+       <h3 class="font-heading font-semibold text-lg mb-1" style="color:#e0edff;">Ferdy <span style="color:#60a5fa;">#08</span></h3>
+       <p class="text-sm" style="color:#7baaf7;">Project Leader & Pembuat Web</p>
+      </div>
+      <div class="text-center anim-fade-up delay-1">
+       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqKV2XgTIxmfIyzAeY6bAVD7ecp0KwOgJvSHy47Gs_yBcL1HJJsRGvTktv2MGpZgBAdxEXVm11OKKdF4DIRYkEBOE7M2YW1M0C0Glw4VI1YPyrffBOi7Pbrhp8NeSQt0G3-hSSyQmlO3Zw78obei-v3qjeRIYhcKjC2Xi6hyphenhyphen6iPMy_W48CDKE5I5FGj-vA/s437/14_I%20KADEK%20AJUS%20PUTRA%20PRADNYANA.jpg.jpeg" alt="Ajus" loading="lazy" class="w-40 h-40 mx-auto mb-5 rounded-2xl object-cover" onerror="this.style.background='#1e3a5f'; this.alt='Photo unavailable';">
+       <h3 class="font-heading font-semibold text-lg mb-1" style="color:#e0edff;">Ajus <span style="color:#60a5fa;">#14</span></h3>
+       <p class="text-sm" style="color:#7baaf7;">Penyusun Kata & Design</p>
+      </div>
+      <div class="text-center anim-fade-up delay-2">
+       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVgZmOwOzl3XSlTXRfzNMbbLKl1MuUKtae2hrOX-n0N8yyijPX4D2gCLFrH3fYmAaw8UqutMGlUcZMJAqdMvFSEHIdYrAyGz9vGoc1xgbEZSTsD8J_pCC3HLDN1Rr8PqPvbWhHag4MhJrBLTgz0CXvpqkph7NFU80YydrjduHyhb8iMteCf77y7LxPhxya/s4740/32.%20Ni%20Putu%20Vina%20Priana%20Kusuma%20Dewi.jpg.jpeg" alt="Vina" loading="lazy" class="w-40 h-40 mx-auto mb-5 rounded-2xl object-cover" onerror="this.style.background='#1e3a5f'; this.alt='Photo unavailable';">
+       <h3 class="font-heading font-semibold text-lg mb-1" style="color:#e0edff;">Vina <span style="color:#60a5fa;">#32</span></h3>
+       <p class="text-sm" style="color:#7baaf7;">Design</p>
+      </div>
+     </div>
+     <div class="grid md:grid-cols-3 gap-8 mt-8">
+      <div class="text-center anim-fade-up delay-3">
+       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi2-6c379ubVR5u1gJidBzf030MUQOS69K9DlEyd4uxxiOx5v8tX8lyQ9KwRQiwtuQ8nOxu7GxkRhvTJczKSURoc-4o7KfmXyLigjKq0v-uJtLcBQw8A_sOdU3US8ZdluGS5ydigHRnPTToNU3Qju57eeIPu1h-8mGASuuQkX7zgsIaeF8olh8K6xTuSjCM/s1316/indira-30-rpl.jpg.jpeg" alt="Indira" loading="lazy" class="w-40 h-40 mx-auto mb-5 rounded-2xl object-cover" onerror="this.style.background='#1e3a5f'; this.alt='Photo unavailable';">
+       <h3 class="font-heading font-semibold text-lg mb-1" style="color:#e0edff;">Indira <span style="color:#60a5fa;">#30</span></h3>
+       <p class="text-sm" style="color:#7baaf7;">Q&A and Design</p>
+      </div>
+      <div class="text-center anim-fade-up delay-4">
+       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwqT0q_2xE1SuqP92_gQqPSbrWmxIB48U-csx3Zp8hF-m_DOR-6_gwvu2YLxURcEorruYEH0-nOETASLRFb8UUbhW4dKkhGY3tiC1AlJwYwxruuK0xXUML3cBB9ywKgv0GCe9Ydt6RBVu1WyjEkujDkm6qabR9fGj12mr91-E6lX_j_EGvV1AsAC3zhLB9/s1359/WhatsApp%20Image%202026-03-28%20at%2016.26.26.jpeg" alt="Wisnu" loading="lazy" class="w-40 h-40 mx-auto mb-5 rounded-2xl object-cover" onerror="this.style.background='#1e3a5f'; this.alt='Photo unavailable';">
+       <h3 class="font-heading font-semibold text-lg mb-1" style="color:#e0edff;">Wisnu <span style="color:#60a5fa;">#13</span></h3>
+       <p class="text-sm" style="color:#7baaf7;">Q&A and Design</p>
+      </div>
+      <div class="text-center anim-fade-up delay-5">
+       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnovPeDNw992MiKZ46XEb96EHTlgS0Q8r0hAcoQXSOXfRy4_-WciyDLf2mnifqckglzisBp-7PiEIH7CgrMVdj1adn3Zux-4LbMWba9vDvtWIiknsBLD3DrtdxKGjVNVVA8rMazjk0ohyNe6jvzZFKt-ODjWsXpuwFNnQVPxzOwB21bRBY2hfuVmLIjJwe/s6000/eka.jpg.jpeg" alt="Eka" loading="lazy" class="w-40 h-40 mx-auto mb-5 rounded-2xl object-cover" onerror="this.style.background='#1e3a5f'; this.alt='Photo unavailable';">
+       <h3 class="font-heading font-semibold text-lg mb-1" style="color:#e0edff;">Eka <span style="color:#60a5fa;">#09</span></h3>
+       <p class="text-sm" style="color:#7baaf7;">Idea & Design</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Q&A Section -->
+   <section id="qa" class="relative px-6 py-20">
+    <div class="max-w-4xl mx-auto">
+     <div class="text-center mb-14">
+      <p class="text-xs tracking-widest uppercase mb-2" style="color:#60a5fa;">Tanya Jawab</p>
+      <h2 class="font-heading font-bold text-3xl md:text-4xl" style="color:#e0edff;">Mengenal Ms. Tini</h2>
+      <div class="w-16 h-1 mx-auto mt-4 rounded-full" style="background:#2563eb;"></div>
+     </div>
+     <div class="space-y-8">
+      <div class="rounded-2xl p-8 anim-fade-up" style="background:rgba(30,58,95,0.5); border:1px solid rgba(96,165,250,0.12);">
+       <div class="flex items-start gap-4 mb-4">
+        <div class="text-2xl flex-shrink-0">
+         ❓
+        </div>
+        <h3 class="font-heading font-semibold text-lg" style="color:#e0edff;">Siapakah tokoh yang paling menginspirasi ibu dalam kehidupan atau perjalanan karir ibu sebagai guru?</h3>
+       </div>
+       <div class="flex items-start gap-4 ml-10">
+        <div class="text-2xl flex-shrink-0">
+         💬
+        </div>
+        <p style="color:#b0c7e8;" class="leading-relaxed">Orang tua dan tokoh idola saya <strong>Mother Teresa</strong>. Mereka telah mengajarkan saya untuk memberikan yang terbaik dengan tulus ikhlas, untuk melayani dengan penuh kasih sayang, dan untuk selalu melihat kebaikan dalam setiap orang.</p>
+       </div>
+      </div>
+      <div class="rounded-2xl p-8 anim-fade-up delay-1" style="background:rgba(30,58,95,0.5); border:1px solid rgba(96,165,250,0.12);">
+       <div class="flex items-start gap-4 mb-4">
+        <div class="text-2xl flex-shrink-0">
+         ❓
+        </div>
+        <h3 class="font-heading font-semibold text-lg" style="color:#e0edff;">Apa prestasi yang paling ibu banggakan?</h3>
+       </div>
+       <div class="flex items-start gap-4 ml-10">
+        <div class="text-2xl flex-shrink-0">
+         💬
+        </div>
+        <p style="color:#b0c7e8;" class="leading-relaxed">Sebagai guru dan pendidik, melihat anak-anak paham materi, attitude menjadi semakin baik, dan <strong>anak didik sukses</strong>, itu adalah prestasi kebanggaan buat saya. Ketika saya melihat murid-murid saya berkembang menjadi individu yang lebih baik, itulah kesuksesan terbesar saya.</p>
+       </div>
+      </div>
+      <div class="rounded-2xl p-8 anim-fade-up delay-2" style="background:rgba(30,58,95,0.5); border:1px solid rgba(96,165,250,0.12);">
+       <div class="flex items-start gap-4 mb-4">
+        <div class="text-2xl flex-shrink-0">
+         ❓
+        </div>
+        <h3 class="font-heading font-semibold text-lg" style="color:#e0edff;">Apa harapan ibu untuk siswa-siswi ibu di masa depan?</h3>
+       </div>
+       <div class="flex items-start gap-4 ml-10">
+        <div class="text-2xl flex-shrink-0">
+         💬
+        </div>
+        <p style="color:#b0c7e8;" class="leading-relaxed">Saya berharap anak-anak sekarang bisa lebih <strong>kreatif, inovatif dan memiliki akhlak yang lebih baik</strong> untuk masa depan mereka. Saya ingin mereka tidak hanya pintar secara akademis, tetapi juga menjadi pribadi yang baik hati, bertanggung jawab, dan siap berkontribusi untuk masyarakat dan dunia.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Social Links -->
+   <section class="relative px-6 py-12">
+    <div class="max-w-3xl mx-auto text-center">
+     <p class="text-sm" style="color:#93bbfc;">Ikuti Ms. Tini:</p>
+     <div class="flex gap-6 justify-center mt-6">
+      <a href="https://www.instagram.com/tiniswastika?igsh=MzY1YXpvcWoyamZy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm transition-all hover:scale-105" style="background:rgba(37,99,235,0.2); color:#60a5fa; border:1px solid rgba(96,165,250,0.3);"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgIwFoO8mHP_g3T74mgor9GW_-Du0ow08EMEMAZhp5ZqszmfXZybGOpw4fFyIxO8F83bsTNgQDjBWri4bhQCEf_23736O1QxhHPaHgJRbXa0s8nFps6ZxX_7uX-jLIhBQ39x4T_IQZhiDZmsS9XQKQ-_V5NEjiAg5zMpWPm-GdYSo2x-wEKAREtvN-RVCg9/w389-h389/ig.png" alt="Instagram" loading="lazy" style="width:32px;height:32px;" onerror="this.style.background='#1e3a5f';"> Instagram</a> <a href="https://www.facebook.com/share/1DRHS4ZAK4/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium text-sm transition-all hover:scale-105" style="background:rgba(37,99,235,0.2); color:#60a5fa; border:1px solid rgba(96,165,250,0.3);"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimx1khlLeCfC7ZL_Kl0Vup-nAKgWE_Ie98VEa5IctsTohb7esQw3RyYWNygxYSrZdk7VIlph3pYFveSdD7KsbDbFNretBfQfxOXyvJ3rCYbHGZ5RSSm1x98RKqrpcwF3FhztYtPzDkiDVkHg5ySUg8jFKdBKrZeAGvmy81fMmnAzsFdvRcDmvyWVYFkh_h/s320/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png" alt="Facebook" loading="lazy" style="width:20px;height:20px;" onerror="this.style.background='#1e3a5f';"> Facebook</a>
+     </div>
+    </div>
+   </section><!-- Project Dedication Section -->
+   <section class="relative px-6 py-20">
+    <div class="max-w-4xl mx-auto">
+     <div class="text-center mb-12">
+      <p class="text-xs tracking-widest uppercase mb-2" style="color:#60a5fa;">Tentang Biografi Ini</p>
+      <h2 class="font-heading font-bold text-3xl md:text-4xl mb-6" style="color:#e0edff;">Proyek Kami</h2>
+      <p class="text-base leading-relaxed" style="color:#b0c7e8;">Website ini dibuat sebagai upaya untuk menampilkan dedikasi dan pengalaman luar biasa dari para pendidik. Kami bangga mempersembahkan kisah inspiratif mereka kepada dunia.</p>
+     </div>
+     <div class="grid sm:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl card-hover anim-fade-up" style="background:rgba(30,58,95,0.5); border:1px solid rgba(96,165,250,0.12);">
+       <div style="width:28px;height:28px;color:#60a5fa;" class="mx-auto mb-3">
+        ❤️
+       </div>
+       <p class="text-xs font-medium text-center" style="color:#e0edff;">Dibuat Dengan Cinta</p>
+       <p class="text-xs mt-1 text-center" style="color:#7baaf7;">Untuk Ibu Supartini</p>
+      </div>
+      <div class="p-6 rounded-2xl card-hover anim-fade-up delay-1" style="background:rgba(30,58,95,0.5); border:1px solid rgba(96,165,250,0.12);">
+       <div style="width:28px;height:28px;color:#60a5fa;" class="mx-auto mb-3">
+        ✨
+       </div>
+       <p class="text-xs font-medium text-center" style="color:#e0edff;">Inovasi Digital</p>
+       <p class="text-xs mt-1 text-center" style="color:#7baaf7;">Untuk Pendidikan</p>
+      </div>
+      <div class="p-6 rounded-2xl card-hover anim-fade-up delay-2" style="background:rgba(30,58,95,0.5); border:1px solid rgba(96,165,250,0.12);">
+       <div style="width:28px;height:28px;color:#60a5fa;" class="mx-auto mb-3">
+        ⭐
+       </div>
+       <p class="text-xs font-medium text-center" style="color:#e0edff;">Menginspirasi</p>
+       <p class="text-xs mt-1 text-center" style="color:#7baaf7;">Generasi Muda</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="relative px-6 py-10" style="border-top:1px solid rgba(96,165,250,0.1);">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+     <div class="flex items-center gap-2"><span class="text-2xl font-bold" style="color:#e0edff;">✎𓂃𝐵𝒾𝑜𝑔𝓇𝒶𝒻𝒾</span>
+     </div>
+     <p class="text-xs" style="color:#5a7da8;">© 2026 Ni Ketut Supartini. Spread Love Everywhere. ❤️</p>
+    </div>
+   </footer>
+  </div>
+  <script>
+    function smoothScroll(e, id) {
+      e.preventDefault();
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      document.getElementById('mobileMenu')?.classList.add('hidden');
+    }
+
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('mobileToggle').querySelector('i');
+      menu.classList.toggle('hidden');
+      icon.style.animation = 'none';
+      setTimeout(() => {
+        icon.style.animation = 'buttonPulse 0.6s ease-in-out';
+      }, 10);
+    });
+
+    document.querySelectorAll('.button-animate').forEach(btn => {
+      btn.addEventListener('mouseenter', function() {
+        this.style.animation = 'buttonGlow 1.5s ease-out';
+      });
+      btn.addEventListener('mouseleave', function() {
+        this.style.animation = 'none';
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.anim-fade-up, .anim-slide-l, .anim-slide-r, .anim-scale').forEach(el => {
+            el.style.animationPlayState = 'running';
+          });
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('section, .max-w-5xl').forEach(s => observer.observe(s));
+
+    const defaultConfig = {
+      teacher_name: 'Ni Ketut\nSupartini',
+      teacher_title: 'Spread Love Everywhere Through English',
+      bio_text: 'Ni Ketut Supartini, lahir di Karangasem pada 24 Maret 1973, telah mengabdikan 29 tahun hidupnya sebagai pendidik bahasa Inggris.',
+      philosophy_text: '"Praktikkan bahasa Inggris dalam kehidupan sehari-hari. Ciptakan sendiri lingkungan berbahasa Inggris."',
+      about_title: 'Perjalanan & Karier'
+    };
+
+    function applyConfig(config) {
+      const c = { ...defaultConfig, ...config };
+      const nameHtml = (c.teacher_name || defaultConfig.teacher_name).replace(/\n/g, '<br>');
+      document.getElementById('heroName').innerHTML = nameHtml;
+      document.getElementById('heroTitle').textContent = c.teacher_title || defaultConfig.teacher_title;
+      document.getElementById('bioText').textContent = c.bio_text || defaultConfig.bio_text;
+      document.getElementById('philosophyQuote').textContent = c.philosophy_text || defaultConfig.philosophy_text;
+      document.getElementById('aboutTitle').textContent = c.about_title || defaultConfig.about_title;
+    }
+
+    window.elementSdk.init({
+      defaultConfig,
+      onConfigChange: async (config) => applyConfig(config),
+      mapToCapabilities: (config) => ({
+        recolorables: [],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      }),
+      mapToEditPanelValues: (config) => new Map([
+        ['teacher_name', config.teacher_name || defaultConfig.teacher_name],
+        ['teacher_title', config.teacher_title || defaultConfig.teacher_title],
+        ['bio_text', config.bio_text || defaultConfig.bio_text],
+        ['about_title', config.about_title || defaultConfig.about_title]
+      ])
+    });
+
+    lucide.createIcons();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e3ff420e400fde2',t:'MTc3NDc5ODYyMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
